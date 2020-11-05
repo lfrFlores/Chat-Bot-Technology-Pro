@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 })
 
 // for Facebook verification
-app.get('/webhook/', function (req, res) {
+app.get('/technology/', function (req, res) {
     if (req.query['hub.verify_token'] === 'Luis_Flores') {
         res.send(req.query['hub.challenge'])
     }
